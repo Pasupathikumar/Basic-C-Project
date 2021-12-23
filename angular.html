@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<title>NgClass</title>
+<script src="C:\Users\Pasupathikumar.s\Desktop\codes\codes\AngularJS_Projects/angular.min/js">
+</script>
+<style>
+    .normal {
+        color: white;
+        background-color: aqua;
+        font-size: medium;
+        font-family: 'Courier New', Courier, monospace;
+    }
+    
+    .medium {
+        color: black;
+        background-color: aquamarine;
+        font-size: smaller;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+</style>
+
+<body ng-app="">
+    <h1>Choose Any One</h1>
+    <select ng-model="home">
+        <option value="normal">Normal</option>
+        <option value="medium">Medium</option>
+    </select>
+    <hr>
+    <div ng-switch="home">
+        <div ng-switch-when="normal">
+
+            <h3>Normal</h3>
+            <p>
+                This is just a samplecode like normal class.
+
+            </p>
+
+        </div>
+        <div ng-switch-when="medium">
+
+            <h3>Medium</h3>
+            <p>This is a medium part.</p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+</html>
